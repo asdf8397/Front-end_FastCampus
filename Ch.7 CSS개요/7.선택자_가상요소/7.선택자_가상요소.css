@@ -1,0 +1,26 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+.box::before {
+    content: "before";
+}
+
+
+/* 가상요소 선택자(Pseudo-Elements) ::before */
+/* 
+<div class="box">contents</div>라고 해주면 화면에선 contents라고 나온다.
+여기서 .box::before를 해주게 되면 HTML에 설정해준 contents 글자 앞에
+.box::before{content:"before"}를 넣어준 before contents 이렇게 적히게된다.
+*/
+
+
+/* 가상요소 선택자(Pseudo-Elements) ::after */
+/* 
+<span class="size">container</span>라고 해주면 화면에서 container라고 출력된다.
+여기서 .size::after를 해주면 HTML에서 적어준 container의 글자 뒤에
+.size::after{content:"bd"}를 넣어주면 container뒤에 bd가 적히게 된다.
+*/
+
+/* 가상요소 선택자는 content는 세트 다 중요성 높음 ***************** */

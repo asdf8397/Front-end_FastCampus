@@ -1,0 +1,22 @@
+a {
+    font-size: 50px;
+}
+
+span {
+    color: red;
+}
+
+table {
+
+}
+tr {
+
+}
+td { border: 1px solid black;
+     padding: 10px
+}
+/* CSS에서 table 설명 */
+/* 
+    html에서 table 태그안에 tr td가 추가되기때문에 css에서 테이블속성을 지정해줄때 
+    table안에서 tr td를 지정해 줘야한다고 생각할수있다 하지만 table{}따로 만들고 tr{} td{}를 만들어야된다.
+*/ 

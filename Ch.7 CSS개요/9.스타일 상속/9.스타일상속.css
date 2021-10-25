@@ -1,0 +1,38 @@
+.animal {
+    color: red;
+}
+
+.parent_A {
+    width: 300px;
+    height: 200px;
+    background-color: red;
+}
+.child_A {
+    width: 100px;
+    height: 200px;
+    background-color: orange;
+}
+
+.parent_B {
+    width: 300px;
+    height: 200px;
+    background-color: red;
+}
+.child_B {
+    width: 100px;
+    height: inherit;
+    background-color: inherit;
+    position: fixed;
+    top: 100px;
+    resize: 10px;
+}
+
+/* 강제상속(자동상속) */
+/* 
+parent는 부모요소 child는 자식요소이다. child(자식요소는)
+ parent부모요소를 상속받는다 css에서 상속도 마찬가지다 하지만 css요소 추가때
+ parent의 변경에 따라서 child도 parent값을 똑같이 상속받으면서 요소변경
+ 해줘야한다
+ 그렇지만 inherit는 부모요소를 자식요소에 강제(자동)적으로 상속하면서 부모요소가
+ 바뀌면 자식요소도 동일하게 값이 변하고 따라가게 강제상속으로 지정할수있다.
+*/

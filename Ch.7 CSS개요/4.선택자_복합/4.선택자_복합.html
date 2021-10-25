@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.선택자_복합</title>
+    <link rel="stylesheet" href="./4.선택자_복합.css">
+</head>
+<body>
+    <div>
+        <ul>
+            <li>사과</li>
+            <li>딸기</li>
+            <li class="orange">오렌지</li>
+        </ul>
+        <div>당근</div>
+        <p>토마토</p>
+        <span class="orange">오렌지</span>
+    </div>
+</body>
+</html>
+
+<!-- 복합 일치선택자(Basic Combinator) -->
+<!-- 
+    선택자 ABC와 XYZ를 동시에 만족하는 요소 선택
+    → 예를 들어 li class="orange"가 있고 span class="orange"가 있는데
+    span class="orange"를 값을 지정해주고 싶으면
+    span.orange{color: red;}로 지정해주면된다.
+    span class="orange"의 오렌지만 빨간색으로 색변화 적용된다.
+-->
+
+<!-- 복합 자식 선택자(Child Combinator) -->
+<!-- 
+    선택자 ABC의 자식 요소 XYZ선택
+    → 예를들어 ul > .orange {color: red;}는 ul태그의 class="orange"가 있는
+    <li class="orange">오렌지<li>의 색상을 빨간색으로 변경되게한다
+    이것은 ul의 자식요소인 class="orange"를 지정해줌으로서 자식요소인 class를
+    선택적으로 css를 지정해주게 한다.
+ -->
+
+<!-- 복합 하위(후손)선택자(Descendant Combinator) -->
+<!-- 
+    선택자 ABC의 하위 요소 XYZ선택 '띄어쓰기'가 선택자의 기호
+    → div .orange {color:green;}은 div태그의 자식요소들중 class="orange"로
+    지정되어 있는 자식요소를 선택적 css속성을 지정해주는것
+ -->
+
+<ul>
+    <li>딸기</li>
+    <li>수박</li>
+    <li class="fruits">오렌지</li>
+    <li>망고</li>
+    <li>사과</li>
+</ul>
+
+<!-- 복합 인접 형제 선택자(Adjacent Sibling Combinator) -->
+<!-- 부모가(ul) 같은 요소를 공유하는 li는 인접형제요소들이다  -->
+<!-- 
+    선택자 ABC의 다음 형제 요소 XYZ 하나를 선택
+    → .fruits + li {color: sunflower}은 li의 요소들중에 class="fruits"의
+    인접한 망고를 선택해서 css속성을 적용할때 사용한다.
+ -->
+<!-- +표시는 형제요소중에 class로 지정된 그 요소의 바로 뒷요소 하나만 선택한다 -->
+
+
+<ul>
+    <li>딸기</li>
+    <li>수박</li>
+    <li class="water">오렌지</li>
+    <li>망고</li>
+    <li>사과</li>
+</ul>
+
+<!-- 복합 일반형제 선택자(General Sibling Combinator) -->
+<!-- 선택자 ABC의 다음 형제 요소 XYZ 모두를 선택 -->
+
+<!-- 
+    → .water ~ li {color: skyblue;}는 li형제요소중에 water의
+    뒤형제요소들을 모두선택하는것 css를 적용하게 된다.
+ -->
+<!-- ~는 형제요소들중에 class로 지정된 그 요소의 뒤의 전부다를 선택한다. -->

@@ -1,0 +1,16 @@
+.parent {
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    background-color: royalblue;
+}
+.child {
+    width: 200px;
+    height: 100px;
+    background-color: orange;
+    opacity: 0.5;
+}
+/* opacity: 요소의 투명도 */
+/* 1: 불투명 0:투명 */
+/* 불투명도 작성할때 0.5 0.07과 같이 소수점으로 작성해줄수있다
+    여기서 0.5에서 0을 뺀 .5 이렇게 소수점으로 표현 해 줄수도있다. */

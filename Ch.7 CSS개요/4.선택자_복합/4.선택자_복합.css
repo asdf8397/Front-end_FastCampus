@@ -1,0 +1,19 @@
+span.orange {
+    color: red;
+}
+
+ul>.orange {
+    color: blue;
+}
+
+div .orange {
+    color: green;
+}
+
+.fruits + li {
+    color: hotpink;
+}
+
+.water ~ li {
+    color:skyblue;
+}

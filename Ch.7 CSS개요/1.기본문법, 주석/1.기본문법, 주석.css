@@ -1,0 +1,26 @@
+div {
+    font-size: 50px;
+    color: blue;
+    text-decoration: underline;
+}
+
+/* css의 기본문법 */
+/* 
+
+div {font-size: 50px} 
+
+div ← 스타일(css)을 적용할 대상(Selector)
+      선택자(div, span..... 등등)
+
+font-size ← 속성: 스타일(CSS)의 종류(Property)
+                  내가 적용할려고하는 종류(font-size, color, background-color 등등)
+
+Value,, 50px ← 값을 지정해준다
+       내가 정해주는 값(스타일(CSS)의 값(Value)
+*/
+
+/* 주석 */
+/* 
+주석: 브라우저는 이 범위를 해석하지 않음 
+[단축키: Ctrl +/]
+*/

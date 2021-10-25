@@ -1,0 +1,78 @@
+.container .item {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+.container .item:first-child {
+    border: 10px solid orange; /* border: 10px 선의 두께 solid 선을 추가한다*/
+}
+
+/* border: 선-두께 선-종류 선-색상 */ 
+/* ↑ border: 선-두께, 선-종류, 선-색상으로 적는다 */
+
+/* border-width: 요소 테두리 선의 두께 */
+/* 
+medium: 중간 두께
+thin:얇은 두께
+thick: 두꺼운 두께
+단위: px, em, % 등 단위로 지정 ______(권장한다)
+*/
+
+/* 
+border-width: top, right, bottom, left
+border-width: top,bottom/left,right
+border-width: top/left,right/bottom
+border-width: top/right/bottom/left 
+*/
+
+/* border-style: 요소 테두리 선의 종류 */
+/* 
+none: 선없음
+solid: 실선(일반 선)
+dotted: 점선
+dashed: 파선
+double: 두줄선
+groove: 홈이 파여있는 모양
+ridge: 솟은 모양(groove의 반대)
+inset: 요소 전체가 들어간 모양
+outset: 요소 전체가 나온 모양
+*/
+
+/* 
+border-style: top, right, bottom, left
+border-style: top,bottom/left,right
+border-style: top/left,right/bottom
+border-style: top/right/bottom/left 
+*/
+
+/* border-color: 요소 테두리 선의 색상을 지정하는 단축 속성 */
+/*
+black: 검정색
+색상: 선의 색상
+transparent: 투명
+*/
+
+/* 
+border-color: top,right,bottom,left
+border-color: top,bottom/left,right
+border-color: top/left,right/bottom
+border-color: top/right/bottom/left 
+*/
+
+/* CSS에서 색상표현 */
+/* 
+색상이름: / 브라우저에서 제공하는 색상이름 / red,tomato,royalblue
+Hex 색상코드: / 16진수 색상(Hexadecimal Colors) / #000, #FFFFFFF
+RGB:  / 빛의 삼원색   / rgb(255, 255, 255)
+RGBA:  / 빛의 삼원색 + 투명도  / rgba(0,0,0,0.5) rgba중 a는 투명도를 말하는것 
+0~1사이에 숫자를 입력해서 투명도를 지정하는 것 0이 투명한것 1은 불투명한것
+*/
+
+
+/* border-방향, border-방향-속성: 요소의 테두리 선을 지정하는 기타 속성들 */
+/*
+border-top: 두께 종류 색상;
+border-top-width: 두께;
+border-top-style: 종류;
+border-bottom-color: 색상;
+*/

@@ -1,0 +1,70 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transition: 1s;
+}
+.box:hover {
+    width: 300px; /*← 마우스를 갖다댔을때 적용되는 hover값이 width:300px이 된다*/
+    background-color: royalblue;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: green;
+}
+input:focus{
+    background-color: orange;
+}
+
+
+/* 가상클래스선택자 */
+/* 
+.box는 css를 지정해주며 뒤에 .box:hover를 붙이면 hover는 가상클래스 선택자를
+의미하는 것이고 이는 일반적일땐 동작하지 않지만 마우스 커서를 갖다대면 동작하게
+만드는 것 마우스를 갖다대면 움직이므로 가상클래스 선택자라고한다. 
+
+background-color: royalblue로 적용하면 마우스를 올리면 orange색상이 royalblue
+색상으로 변하면서 가상클래스선택자가 변하게 된다.
+*/
+
+/* 전환효과 Transition */
+/* 
+가상클래스 선택자요소가 시간따라서 느리게 커졌다 작아졌다 한다.
+*/
+
+
+/* 가상클래스선택자(Pseudo-Classes) [HOVER] *//*사용빈도 높다↑↑↑↑*/
+/* 
+선택자 ABC요소에 마우스 커서가 올라가 있는 동안 선택(color:red로 지정한 색상)
+으로 마우스를 갖다된 동안 색상이 변경되어있음 
+
+[예시]
+a:hover{color: red;}
+↑
+ABC
+*/
+
+/* 가상 클래스선택자(Pseudo-Classes) [ACTIVE] */
+/* 
+선택자 ABC요소에 마우스를 클릭하고 있는 동안 선택
+a:active {color:green;}으로 지정하면 a태그를 지정한 링크를 클릭을 누르고 있는동안에
+색상이 지정한 값으로 보이게 된다.
+*/
+
+/* 가상클래스 선택자(Pseudo-Classes) [Focus] */
+/* input:focus → ABC:focus */
+/* 
+쉽게말해서 ABC(input):focus를 지정해주면 text요소를 클릭하면 배경색상으로 지정한
+오렌지색상으로 색이 들어온다.
+*/
+
+/* tabindex */ /*[**** 이부분 잘모름]*/
+/* 
+tabindex는 속성을 통해 Focus가 될수 있는 요소를 만들수있다. 
+tab키를 사용해 Focus할 수 있는 순서를 지정하는 속성이고 순서(값)으로 -1이
+아닌 다른 값을 넣는 것은 논리적 흐름을 방해하기 때문에 권장하지 않는다
+*/

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.선택자_기본</title>
+    <link rel="stylesheet" href="./3.선택자_기본.css">
+</head>
+<body>
+    <div>
+        <ul>
+            <li>사과</li>
+            <li>딸기</li>
+            <li>오렌지</li>
+        </ul>
+        <div>당근</div>
+        <p>토마토</p>
+        <span>오렌지</span>
+    </div>
+
+    <br>
+
+    <div>
+        <ul>
+            <li>사과</li>
+            <li>딸기</li>
+            <li class="orange">오렌지</li>
+        </ul>
+        <div>당근</div>
+        <p>토마토</p>
+        <span class="orange">오렌지</span>
+    </div>
+
+    <!-- 기본 클래스선택자(Class selector) -->
+    <!-- 
+        HTML class속성의 값이 orange인 요소 선택자 
+        span태그에 class선택자 값을 orange라고 지정했고,,, class선택자는
+        따로 지정한 값 orange라고 설정했을때 css값을 class선택자를 설정한
+        orange로 값을 따로 지정해서 사용할수있음
+        
+        class="orange"은 CSS: .orange
+    -->
+
+    <br>
+
+    <div>
+        <ul>
+            <li>사과</li>
+            <li>딸기</li>
+            <li id="apple">오렌지</li>
+        </ul>
+        <div>당근</div>
+        <p>토마토</p>
+        <span id="apple">사과</span>
+    </div>
+
+    <!-- 기본 아이디선택자(ID selector) -->
+    <!-- 
+        HTML id 속성의 값이 apple인 요소 선택자
+        HTML에서 id선택자의 값을 apple로 지정하고 CSS에서 id의 값인 apple
+        로 속성의 값을 지정해줄수있다,,,, id로 지정해준곳의 값은 당연히 
+        적용된다,,,,, 한 가지 특징은 class속성은 여러개 다중으로 지정해
+        줄수있지만 id속성은 단 하나의 단독, 유일한곳에 하나만 지정해서 사용할
+        수있다.
+
+        id="apple"은 CSS: #apple
+     -->
+</body>
+</html>
+

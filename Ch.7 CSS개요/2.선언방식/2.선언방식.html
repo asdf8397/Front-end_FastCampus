@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.선언방식</title>
+    <style>
+        div {
+            color: red;
+            margin: 20px;
+        }
+    </style>
+    <!-- 내장방식 -->
+    <!-- 
+        <style></style>의 내용(Contents)으로 스타일을 작성하는 방식
+        CSS내용을 HTML의 <style></style>태그 내부에 내장하는 방식이다.
+    -->
+    <link rel="stylesheet" href="./2.선언방식1.css">
+    <link rel="stylesheet" href="./2.선언방식2.css">
+    <!-- 링크방식(병렬방식)-->
+    <!-- 
+        <link/>로 외부 CSS문서를 가져와서 연결하는 방식
+     -->
+</head>
+<body>
+    <div>Hello HTML World</div>
+    <br>
+    <span style="color: blue;">Hello span World</span>
+    <!-- 인라인방식 -->
+    <!-- 
+        요소의 style속성에 직접 스타일을 작성하는 방식(선택자 없음)
+        HTML의 <div><span>같은 요소안에 직접 style의 속성을 추가해서 CSS기능을
+        넣어주는 것 
+
+        단점: 인라인방식은 CSS에서 제일 우선하기 때문에 CSS를 수정하고싶어도
+        인라인방식은 CSS중에 제일 우선하기 때문에 향후 CSS변경할때 적용되지 않는다
+        그래서 인라인방식을 최대한 사용히자 말것
+     -->
+    
+    <A>Hi FastCampus World</A>
+    <B>Hello Import Test World</B>
+</body>
+</html>

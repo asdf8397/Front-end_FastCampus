@@ -1,0 +1,13 @@
+div {
+    background: url("../images/logo.png");
+    height: 500px;
+    width: 500px;
+}
+
+/* 참고 */
+/* png, jepg 이미지 불러오기 */
+/*
+html에선 image연결을 통해서 이미지 파일을 불러올수있다(원본파일 그대로 불러올수있다는 장점)
+css에선 images를 background url()을 통해서 이미지를 불러올수있다 단, 원본 크기에 맞게 height, width크기를
+맞춰줘야 사진이 생선되게 된다
+*/

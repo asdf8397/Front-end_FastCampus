@@ -1,0 +1,9 @@
+<span>Hello world</span>
+<span>Hello world</span>
+<span>Hello world</span>
+<span>Hello world</span>
+<span>Hello world</span>
+
+작성한 VScode를 브라우저에서 출력할때 단축키(확장기능에서: live server)를
+누르면 브라우저에 만든 html css javascript를 브라우저에 출력할수있다
+단축키: Ctrl + L + O

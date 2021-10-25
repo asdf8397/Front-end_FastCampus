@@ -1,0 +1,93 @@
+.fruits span:first-child{
+    color: red;
+}
+
+.fruits div:first-child{
+    color: green;
+}
+
+.fruits h3:last-child {
+    color: brown;
+}
+
+.fruits *:nth-child(2) {
+    color: skyblue;
+}
+
+.fruits *:nth-child(2n+1) {
+    color: tomato;
+}
+
+.fruits *:nth-child(n+2) {
+    color: violet;
+}
+
+.fruits *:not(span) {
+    color: royalblue;
+}
+
+/* 가상클래스선택자(Pseudo-Classes) Firstchild */
+/* 선택자 fruits의 형제 요소 중 첫번째선택 */
+/* 
+[.fruits span:first-child]
+.fruits span:first-child는 class선택자 fruits의 span의 첫번째자식요소를 선택(지정한다)
+
+fruits span:first-child를 지정했는데 div class="fruits"로 지정된 fruits의 span의
+첫번째 자식은 딸기 두번째 자식은 수박이므로 첫번째 자식이 color: red;로 설정되게 된다.
+
+[.fruits div:first-child]
+fruits div:first-child는 class선택자가 설정한 fruits의 div의 첫번째 자식요소를 선택
+한다고 지정했을때 fruits의 div의 첫번째 자식요소가 없으므로 선택될수없다.
+
+---- 부가설명 fruits div first-child를 했을때 fruits의 첫번째 자식의 자리엔
+현재 span이 자리잡고 있기때문에 div의 first-child를 넣어줄수없다.
+ */
+
+
+/* 가상클래스 선택자(Pseudo-Classes) Lastchild */
+/* 
+fruits h3:last-child는 fruits의 막내를 찾아서 css를 설정하는 것으로서
+여기서는 fruits h3:last-child는 fruits의 가장 막내인 <h3>사과한테 last-child의
+설정 값을 적용하는 것
+*/
+
+
+/* 가상클래스 선택자(Pseudo-Classes) NTH CHILD */
+
+/* .fruits *:nth-child(2) */
+/* 
+.fruits *:nth-child(2)를 설정하면 fruits가 설정한 자식요소들 중에 2번째 자식요소에
+css값이 적용되게 된다. 
+*/
+
+/* .fruits *:nth-child(2n) */
+/* 
+.fruits *:no-button(2n)를 설정하면 fruits가 설정한 자식요소들 중에 2n번째 자식요소에
+css값이 적용되게 된다.
+쉽게말해 2*0=0, 2*1=2, 2*2=4, 2*3=6 ..... 해서 2n의 배수들만큼 div fruits가 선택이
+되고 css의 값이 적용되게 된다.
+*/
+
+
+/* .fruits *:nth-child(2n+1) */
+/* 
+.fruits *:nth-child(2n+1)를 설정하면 fruits가 설정한 자식요소들 중에 2n+1번째의
+자식요소에 css값이 적용된다
+쉽게말해 2*0+1=1, 2*1+1=3, 2*2+1=5.......해서 2n+1의 값들만큼 div fruits가 선택되고
+css값이 적용되게 된다.
+*/
+
+
+/* .fruits *:nth-child(n+2) */
+/* 
+.fruits *:nth-child(n+2)를 설정하면 fruits가 설정한 자식요소들 중에 n+2번째의
+자식요소에 css값이 적용된다
+쉽게말해 0+2=2, 1+2=3, 2+2=4,,...........해서 n+2의 값을 통해서 fruits의 자식요소들
+중에서 2부터 끝까지 자식요소들만 선택해서 값을 적용할수있게 할 수도 있다
+*/
+
+/* 부정선택자(Negation) Not */
+/*
+.fruits *:not(span)은 not()안에 들어가 있는 것을 css설정을 부정할때 사용한다
+not(span)은 span을 빼고 다른 요소들은 다 선택되서 css를 설정할때 사용한다.
+ */

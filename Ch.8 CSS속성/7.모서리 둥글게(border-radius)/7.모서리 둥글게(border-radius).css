@@ -1,0 +1,18 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+/* border-radius 박스 모서리 깍기 */
+
+/* 
+border-radius: div의 color: orange색상의 width:100px height:100px의
+박스에서 border-radius: 20px의 값으로 모서를 깍아낼때 이것을 사용한다 
+*/
+/*
+border-raidus: 모서리를 한쪽만 둥글게 깍을경우 시계방향으로 1,2,3,4씩 적용되며
+border-raidus: 0 10px 0 0 이렇게 적용하면 2번째(오른쪽)의 한면만 깍이게 된다.
+*/

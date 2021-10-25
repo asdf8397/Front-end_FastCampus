@@ -1,0 +1,4 @@
+@import url(./2.선언방식3.css);
+
+/* @import방식(직렬방식)*/
+/* CSS의 @import규칙으로 CSS문서안에서 또 다른 CSS문서를 가져와서 연결하는 방식 */

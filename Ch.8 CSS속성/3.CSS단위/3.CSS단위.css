@@ -1,0 +1,42 @@
+.parent {
+    width: 300px;
+    height: 200px;
+    background-color: royalblue;
+}
+.child {
+    /* width: 50%; */
+    width: 20em;
+    height: 100px;
+    background-color: orange;
+}
+html {
+    /* font-size: 16px; */
+}
+
+/* 표현단위(단위) */
+/* 
+px: 픽셀
+%: 상대적 백분율
+em: 요소의 글꼴 크기(16px를 말한다)
+rem: 루트요소(html)의 글꼴 크기
+vw: 뷰포트 가로 너비의 백분율
+vh: 뷰포트 세로 너비의 백분율
+*/ 
+
+/* 메모 */
+/* 
+child의 width: 50%를 하면 부모의 가로 넓이에서 50%까지만 child가 사용하게된다.
+chlid의 height: 100%를 하면 parent에서 100% 사용하게 된다. 
+
+html의 요소에서 font-size:16px는 자동적용 되어있기에 설정해주지 않아도 된다.
+
+child의 width에 20em은 16*20= 320px 값이 된다.
+width에 20em을 설정해주면 child의 박스 크기가 글자 크기만큼 커지기때문에
+child의 크기 박스도 커지게 된다.
+
+vw는 뷰포트의 가로너비를 범위를 의미하는것으로서 width:50vw는 화면의 가로 50%만큼
+사용하는것을 나타내게되고
+
+vh는 뷰포트의 세로 너비를 범위를 의미하는 것으로서 height:50vh는 화면의 세로
+50%만큼을 사용하게 나타내게 된다.
+*/

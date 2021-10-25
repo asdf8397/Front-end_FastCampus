@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.핵심요소 정리</title>
+    <style> span {color: red;}</style>
+</head>
+<body>
+     <div> <!-- 블록(상자)요소 --- 특별한 의미가 없는 구분을 위한 요소(Division)-->
+         <h1>오늘의 날씨</h1> <!-- 블록요소 --- 제목을 의미하는 요소(Heading)-->
+         <p>중부 집종호우, 남부는 열대야, 12호 태풍 북상 중...</p> <!-- 블록요소 --- 문장을 의미하는 요소(Paragraph)-->
+         <img src="img/weather.jpg" alt="12호 태풍">
+         <img src="" alt=""> <!-- img src ← 삽입할 이미지의 경로  alt ← 삽입할 이미지의 이름이고 이미지가 뜨지않을때 설명해주는 이름임-->
+     </div>
+
+     <h1>제목1</h1>
+     <h2>제목2</h2>
+     <h3>제목3</h3>
+     <h4>제목4</h4>
+     <h5>제목5</h5>
+     <h6>제목6</h6>
+     
+     <!-- h1~6까지 블럭요소 설명 -->
+     <!-- 
+     <h1></h1> ~ <h6></h6>
+     까지는 블록(상자)요소 제목을 의미하는 요소(Heading) 숫자가 작을수록 더 중요한 제목을 정의
+                                            ↑
+        h1이 제일 큰 제목이고 h6가 제일 작은 제목이다 중요한 제목일수록 제일 큰 것을 써줌
+     -->
+
+     <ul>
+         <li>사과</li>
+         <li>딸기</li>
+         <li>수박</li>
+         <li>오렌지</li>
+     </ul>
+
+     <ol>
+         <li>사과</li>
+         <li>딸기</li>
+         <li>수박</li>
+         <li>오렌지</li>
+     </ol>
+
+     <!-- 
+     ul은 순서가 필요없는 목록의 집합을 의미(Unordered List)
+     ol은 순서가 있는 목록의 집합을 의미(onorderd List)
+     li는 목록 내 각 항목(List Item) 
+     -->
+
+     <a href="https://www.naver.com">Naver</a>
+     <a href="https://www.google.com" target="_blank">GOOGLE</a>
+     ↑
+     <!-- <a href=""></a> 인라인요소(글자)-->
+     <!--
+     - 다른/같은 페이지로 이동하는 하이퍼링크를 지정하는 요소.(Anchor) 
+     ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+     - (1) <a href="htts://www.naver.com">Naver</a>
+                        ↕ 차이점
+       (2) <a href="https://www.google.com" target="_blank">GOOGLE</a>
+
+       (1) a태그 링크는 지금 현재에 있는 링크에서 열려고 하는 페이지를 그대로 여는것
+       (2) a태그 링크는 지금 현재에 있는 링크에서 열려고 하는 페이지가 새탭이 열리고
+            새로 열린 탭에 적용되서 그 페이지가 열리는 것을 의미한다.
+     -->
+
+     <p>
+         <span>동해물</span>과 백두산이 마르고 닳도록
+     </p>
+     <!-- 인라인요소 sapn -->
+     <!-- span은 인라인요소로 특별한 의미 없는 구분을 위한 요소 -->
+     <!-- 
+     html에서 style의 <span></span>의 color: red;로 지정하면
+     css와 동일하게 style에서 지정한 red색상이 span 글자에 지정된다.
+     -->
+     <br>
+     <!-- 인라인요소 <br> -->
+     <!-- 줄바꿈 적용 br태그 -->
+     <input type="text">
+     <input type="textarea">
+     <input type="text" value="SCV2314">
+     <input type="submit" value="입력">
+     <input type="button" value="제출">
+     <input type="radio" value="">
+     <input type="text" placeholder="정보를 입력하세요.">
+     <input type="text" disabled>
+     <input type="checkbox">
+     <!-- 인라인, 블록요소 둘다 포함 <input type="text">  -->
+     <!-- 
+     input에선 화면에 적용해줄때 사용한다 text는 글자를 입력할수있는 칸(타입) 
+     
+     <부가설명>
+     input type="text"는 일반 입력빈칸생성
+     input type="글자제한없는 빈칸"
+     input type="submit"은 버튼생성 근데 제출이라는 글자가 자동생성된 버튼형식 (변경가능)
+     input type="button"은 일반적인 버튼생성 하지만 글자는 없다 value로 넣어줘야한다. (변경가능)
+     input type="button"은 일반적은 체크형
+     input type="text" placeholder="정보를 입력하세요."는 생성한 빈칸에 희미한(힌트) 설명을 해줄때
+     input type="text" disabled는 입력칸을 disabled 비활성화시키는것
+     input type="checkbox는 입력란을 체크박스로 나타내게된다."
+     input type="radio"는 선택할때 사용되며 선택박스가 생성된다. 설문조사에서 사용된다.
+     -->
+
+     <br>
+     
+     <input type="checkbox"> Apple
+     <input type="checkbox"> Banana
+     <label>
+         <input type="checkbox">Apple
+     </label>
+     <label>
+         <input type="checkbox">Banana
+     </label>
+
+     <label>
+         <input type="radio" name="fruits">Apple
+     </label>
+     <label>
+         <input type="radio" name="fruits">Banana
+     </label>
+
+     <!-- label -->
+     <!-- 
+         <input type="checkbox"> Apple
+         Apple은 체크박스를 생성할수있으며 각각 체크박스가 생성되고 무조건 체크란에 체크해야된다 
+         
+         <label><input type="checkbox">Apple</label>
+         label로 묶은것으로서 checkbox 선택해도 되고 label로 묶었으니 Apple글자를 선택해도 체크박스가 선택된다.
+
+         <label><input type="radio" name="fruits">Apple</label>
+         label로 묶은 input type="radio"에서 name="fruit" 네임에 fruit로 지정해서 묶었을때
+         Banana와 Apple을 묶었을때 둘중에 하나만 선택되게 묶을때 설문지에서 둘중 하나를 선택할때
+         이렇게 묶는것으로 사용된다.
+     -->
+
+     <table>
+         <tr>
+             <td>A</td><td>B</td>       화면에서 출력
+         </tr>                          →  AB
+         <tr>                              CD
+             <td>C</td><td>D</td>
+         </tr>
+     </table>
+     
+     <!-- table -->
+     <!-- 
+         표 요소 행(Row)와 열(Column)의 집합
+         tr(행 row)을 지정하는 요소(Table Row)
+         td(열 Column)을 지정하는 요소(Table Data)
+     --> 
+</body>
+</html>

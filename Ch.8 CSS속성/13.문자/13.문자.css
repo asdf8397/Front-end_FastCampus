@@ -1,0 +1,51 @@
+a {
+    display: block;
+    width: 200px;
+    height: 100px;
+    background-color: orange;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 100px;
+}
+
+
+/* a태그는 가로 넓이와 세로넓이를 가질수없다 */
+/* display:block을 추가하면 인라인요소가 블럭요소로 바뀌어서 가로 세로 값을
+    가질 수 있게된다. */
+
+
+/* 글자의 색상: color */
+/* rgb(0,0,0) 검정색,,,, 색상: 기타 지정 가능한 색상 */
+
+
+/* 문자의 정렬방식: text-align */
+/* 
+left: 왼쪽정렬
+right: 오른쪽 정렬
+center: 가운데 정렬
+justify: 양쪽정렬 
+*/
+
+
+/* 문자의 장식(선): text-decoration */
+/*
+none: 장식없음
+underline: 문자의 글들의 아랫줄생김
+overline: 문자의 글들의 윗줄이 생김
+line-through: 문자의 글자들의 중앙선이 생김
+*/
+
+
+p {
+    font-size: 24px;
+    text-indent: -50px; /* -50px만큼 글자를 내어쓰기할때 사용한다 */
+    /* text-indent: 50px; */ /* text-indent: 50px 50px만큼 글자의 몇칸정도를 띄워쓰기해준다고 할때 사용한다 */
+}
+/* 
+문자 첫줄의 들여쓰기(text-indent)
+0: 들여쓰기 없음
+단위: px, em, rem등 단위로 지정
+%: 요소의 가로 너비에 대한 비율
+*/

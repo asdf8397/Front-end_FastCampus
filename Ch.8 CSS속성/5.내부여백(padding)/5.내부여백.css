@@ -1,0 +1,31 @@
+.container .item {
+    width: 100px;
+    height: 100px;
+    background-origin: orange;
+    border: 4px solid red;
+}
+.container .item:first-child {
+    /* padding: 20px; */
+}
+/* padding_요소의 내부 여백(공간)을 지정하는 단축속성 */
+/* 0: 내부여백 없음 */
+/* 단위: px, em, vw등 단위로 지정 */
+/* %: 부모 요소의 가로 너비에 대한 비율로 지정 */
+
+/* padding */
+/* 
+.container .item을 처음지정할때 값은 width heigth의 100px border 4px로 값을
+지정했지만 .container .item: first-child 안에 padding이 20px이므로
+결론적으로 .container item의 박스사이즈는 커지게 된다 
+*/
+
+/* padding의 방향 */
+/* 
+padding: top/right/bottom/left
+padding: top,bottom/left,right
+padding: top/left,right/bottom
+padding: top/right/bottom/left
+*/
+
+/* padding 속성의 특징 */
+/* 내부에 요소가 추가된 것이기때문에 추가된 크기만큼 크기가 늘어난다 */

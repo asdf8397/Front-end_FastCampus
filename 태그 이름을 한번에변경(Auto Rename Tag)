@@ -1,0 +1,8 @@
+<div>Hello world</div>
+<div>Hello world</div>
+<div>Hello world</div>
+<div>Hello world</div>
+
+태그의 열린태그를 변경하면 닫는태그도 변경해줘야한다
+하지만 열린태그를 변경하면 닫는태그도 자동으로 변경되게 하는
+프로그램 확장기능에서 Auto Rename tag를 install해줘서 사용해줘야함

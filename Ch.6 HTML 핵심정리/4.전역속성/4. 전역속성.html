@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./4.전역속성.css">
+    <script defer src="./4.전역속성.js"></script>
+    <title>4.전역속성</title>
+</head>
+<br>
+    <a href="https://naver.com" target="_blank" title="네이버로 이동">네이버</a>
+    <a href="https://google.com" title="구글로 이동">구글</a>
+    <img src="https://cdn.dribbble.com/users/95644/screenshots/15401181/media/a3d85ca2069d7195fcf20ec6009c006f.png?compress=1&resize=1000x750" alt="Logo"
+    title="Logo">
+    
+    <!-- title -->
+    <!-- 
+        전역속성으로서 우리가 HTML Body태그에서 다 사용할수있음
+        title은 요소의 이름을 정하고 이것을 설명해줄때(마우스를 올리고 있으면 해당요소의 정보를 설명해준다.)
+    --> 
+    
+    <!-- style 스타일 -->
+    <!-- style 스타일은 요소에 적용할 스타일(css)을 지정해줄때 (HTML상에서 css적용) -->
+    <!-- css를 외부에서 가져올수있다 하지만 style은 css를 html상에서 직접 적용할때 -->
+
+
+    <span>동해물</span>과 백두산이 마르고 닳도록 하느님이 보우하사
+    <span class="red">우리나라</span>만세</br>
+    
+    <!-- span - class="이름" -->
+    <!-- 요소를 지징하는 중복가능한 이름 -->
+    <!-- 
+        span에 색상 blue를 지정해주면 span태그에 모두 blue색상이 적용된다 
+        하지만 상황에 따라 span태그에 red도 지정해줘서 사용해줘야할때
+        span class="red"라고 지정해주면 span태그에 red라는 중복된 클래스를 지정한게되고
+        css에서 .red{color: red;}라고 지정해서 class red에서 red로 지정해서 결론적으로
+        span전체에 blue색상을 적용되어있지만 중복해서 따로 class="red"지정한 클래스에선
+        red색상을 적용되게 할수있다.
+
+        class="이름"을 지칭하는 css를 생성할땐 .이름  .red{} 이렇게 생성해야할것
+    -->
+
+
+    <span id="abc">동해물</span>과<span class="red">백두산</span>
+    이 마르고 닳도록 하느님이 보우하사<span id="abc" class="red">우리나라</span>만세
+    
+    <!-- span - id="이름" -->
+    <!-- 요소를 지칭하는 고유한 이름 -->
+    <!-- 
+        span에 id를 지정해서 색상 green을 지정해줄수있다
+        id는 class속성과 마찬가지로 어떠한 특성 색상을 지정할때 사용할수있지만
+        id는 class속성보다 우선하게 되며 span앞에 id class 둘다 지정했을땐 id의 지정한 값이
+        먼저 적용되게 된다.
+        또한 id에서 지정해준 이름은 독보적이고 id는 중복되게 사용되면 안된다.
+
+        id="이름"을 지정하고 css에서 사용할땐 #이름 #abc{} 이렇게 들어가야된다.
+     -->
+
+
+    <div data-fruit-name="apple">사과</div>
+    <div data-fruit-name="banana">바나나</div>
+    
+    <!-- data - 이름="데이터" -->
+    <!-- 요소에 데이터를 지정 -->
+
+    <!-- 
+        js코드를 연결해서 data를 연결했을때 사과와 바나나코드는 연결된 페이지의 console에
+        나타나지않는다 이럴때 <script defer src> defer를 해줄 경우 js가 html에서 연결해준 data-fruit-name을
+        읽을수있게되며 console에 나타나게 된다.
+     -->
+</body>
+</html>

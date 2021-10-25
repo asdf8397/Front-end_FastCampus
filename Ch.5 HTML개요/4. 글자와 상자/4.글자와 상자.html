@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. 글자와 상자</title>
+</head>
+<body>
+    <!-- 글자와 상자 - 요소가 화면에 출력되는 특성, 크게 2가지로 구분 -->
+
+    <!-- 인라인(Inline)요소, 블록(Block)요소 -->
+    <!--
+    인라인(Inline)요소: 글자를 만들기 위한 요소들
+    블록(Block)요소 : 상자(레이아웃)를 만들기 위한 요소들
+    -->
+
+    <span>Hello</span>
+    <span>World</span>
+    <!--     ↑
+    <span></span>은 대표적인 인라인 요소! 본질적으로 아무것도 나타내지 않는
+    콘텐츠 영역을 설정하는 용도
+    <span></span>의 인라인요소는 하나의 글자처럼 취급된다.(그래서 글자요소라고한다.)
+    -->
+
+    
+    <span style="width: 100px;">Hello</span>
+    <span style="height:100px">World</span>
+    <!--                ↑
+    <span></span>태그의 인라인태그(글자요소)는 가로, 세로(width, height)사이즈를 지정할수없음
+    etc 글자요소의 크기(글자크기를 width, height가 안된다.)
+     -->
+
+    <span style="margin: 20px 20px;">Hello</span>
+    <span style="padding: 20px 20px;">World</span>
+    <!--                ↑
+    <span><span>태그의 요소의 외부 여백을 지정할때 margin padding 그리고 외부여백에서 위, 아래의
+        여백은 적용되지 않는다 하지만 좌, 우는 여백은 적용된다.
+    -->
+
+    <span><div>Hello World</div></span>
+    <span><span>Hello World</span></span>
+    <!--                ↑
+    <span><span>의 인라인요소는 <span><div></div></span>처럼 인라인요소 안에 자식요소로 div와 같은
+    블럭요소가 들어갈수없음
+    하지만 <span><span></span></span>요소와 같이 인라인요소안에 인라인요소인 것처럼 span안에 자식요소
+    로서 span은 들어갈 수 있다.
+    -->
+
+    <div>Hello</div>
+    <div>World</div>
+    <!--    ↑ 
+    <div></div>의 대표적인 블럭요소는 본질적으로 아무것도 나타내지 않는 콘텐츠 영역을 설정하는 용도
+    -->
+    <div style="width: 100px;">Hello</div>
+    <div style="height: 40px;">World</div>
+    <div style="margin: 10px;">Hello</div>
+    <div style="padding: 10px;">World</div>
+    <!--                ↑
+    div는 블럭요소 가로, 세로사이즈를 지정해줄수있다. 
+    div는 외부 여백도 위, 아래, 좌, 우 외부여백을 지정해줄수있고
+    또한 div는 내부역도 위, 아래, 좌, 우 여백을 지정해 줄 수 있다.
+    -->
+
+    <div><div>Hello</div></div>
+    <div><span>World</span></div>
+    <!--          ↑
+    <div>는 블럭요소이고 여기의 블럭요소의 자식요소로서 같은 div가 들어갈수있고
+    또한 <div>는 인라인요소인 <span>이 자식요소로 들어갈수 있다.
+    -->
+</body>
+</html>

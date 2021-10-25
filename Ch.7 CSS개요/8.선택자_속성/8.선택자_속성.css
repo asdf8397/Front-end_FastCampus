@@ -1,0 +1,12 @@
+[type] {
+    background-color: orange;
+}
+
+[type="password"] {
+    background-color: orangered;
+}
+
+/* 속성선택자 */
+/* 선택자속성으로 css에서 선택할땐 []대괄호를 이용해서 css속성을 적용해줄수있다 */
+/* [type] {background-color: orange;}은 input type전체를 지정해서 css를 넣어줄때 사용한다 */
+/* [type="password"]를 지정할땐 input type password요소만 선택적으로 css를 설정해줄수있다 */

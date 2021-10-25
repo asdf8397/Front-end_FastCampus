@@ -1,0 +1,15 @@
+body {
+    margin: 20px;
+}
+span {
+    width: 120px;
+    height: 30px;
+    background-color: royalblue;
+    color: white;
+    /* display: block; */ 
+    /* display:block은 span을 지정한 width:120px, height: 30px의
+        block을 보이게 생성하는것 */
+    display: none;
+    /* display: none은 display의 값이 안보이게 가리는것을 말함 */
+}
+/* display: 요소의 화면 출력(보여줌)특징 */
