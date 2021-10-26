@@ -13,12 +13,14 @@ p {
     line-height: 1.4;
 }
 
+
 /* font-style: 글자의 기울기 */
 /* 
 normal: 기울기 없음
 italic: 이텔릭체(기울어지는 글자체)
 oblique: 기울어진 글자 
 */
+
 
 /* font-weight: 글자의 두께(가중치) */
 /*
@@ -29,10 +31,17 @@ lighter: 상위(부모)요소보다 더 얇게
 글자의 두께는 가장얇은(100)~가장두꺼운(900): 100단위의 숫자 9개, normal과 bold이외 두께 
 */
 
+
 /* font-size: 글자의 크기 */
 /* 
 16px: 기본 크기
 단위: px, em, rem 등 단위로 지정한다
+*/
+
+/* line-height: 한줄의 높이, 행간간의 넓이 */
+/*
+숫자: 요소의 글꼴 크기의 배수로 지정
+단위: px, em, rem 등의 단위로 지정
 */
 
 div {
@@ -43,9 +52,30 @@ div {
     /* line-height: 200%; */
 }
 
-/* line-height: 한줄의 높이, 행간과 유사 */
-/*
-숫자: 요소의 글꼴 크기의 배수로 지정
-단위: px, em, rem 등의 단위로 지정
+/* font-family: 글꼴1, 글꼴2 .... 글꼴계열 */
+/* div {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+    이런식으로 div의 안에 글꼴을 넣어서 사용할 수 있음 */
+
+/* 글꼴의 종류 */
+/* 
+Hello World: serif(바탕체 계열)
+Hello World!: sans-serif(고딕체 계열)
+Hello World!: Monospace(고정너비(가로폭이 동등)글꼴 계열)
+Hello World: cursive(필기체 계열)
+EMPIRE: (fantasy)장식 글꼴 계열
 */
 
+/* 글자 기울기를 지정할때 사용하는 속성과 값은? */
+/* font-style: italic 글자를 살짝 기울게 사용할수있음 */
+
+
+/* 글자를 두껍게 지정할때 사용하는 속성과 값은? */
+/* font-weight:700; 또는 font-weight: bold; */
+
+
+/* 고딕체 계열을 의미하는 속성값은? */
+/* sans-serif */
+
+
+/* line-height 속성을 사용할 때 권장하는 단위는? */
+/* 배수 E.g. line-height: 1.4; */

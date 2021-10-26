@@ -1,5 +1,5 @@
 a {
-    display: block;
+    display: block; /* a태그는 인라인요소 display:block은 박스요소 추가*/
     width: 200px;
     height: 100px;
     background-color: orange;
@@ -11,41 +11,62 @@ a {
 }
 
 
-/* a태그는 가로 넓이와 세로넓이를 가질수없다 */
+/* a태그는 가로 넓이와 세로넓이를 가질수없다 */ /* a태그는 인라인요소로서 박스요소 가질수없음*/
 /* display:block을 추가하면 인라인요소가 블럭요소로 바뀌어서 가로 세로 값을
     가질 수 있게된다. */
 
 
 /* 글자의 색상: color */
 /* rgb(0,0,0) 검정색,,,, 색상: 기타 지정 가능한 색상 */
+/* 문자의 색상은 rgb(0,0,0) 기본값이므로 검정색이다. */
+/* 글자의 색상을 지정할땐 font-color text-color 등등 이런 문법은 없음 */
 
 
-/* 문자의 정렬방식: text-align */
+/* text-decoration: 글자를 꾸며줄때 사용하는 기능 */
 /* 
-left: 왼쪽정렬
-right: 오른쪽 정렬
-center: 가운데 정렬
-justify: 양쪽정렬 
+text-decoration: none - 선을 만들지 않습니다.
+text-decoration: line-through - 글자 중간에 선을 만듭니다
+text-decoration: overline - 글자 위에 선을 만듭니다.
+text-decoration: underline - 글자 아래에 선을 만듭니다.
+text-decoration: initial - 기본값으로 설정합니다.
+text-decoration: inherit - 부모요소의 속성값을 상속받습니다.
 */
 
 
-/* 문자의 장식(선): text-decoration */
+
+
+/* text-align: 문자, box(상자) 어떤 것이든 속성은 텍스트의 정렬방향을 의미한다. */
 /*
-none: 장식없음
-underline: 문자의 글들의 아랫줄생김
-overline: 문자의 글들의 윗줄이 생김
-line-through: 문자의 글자들의 중앙선이 생김
+text-align: left - 왼쪽 정렬
+text-align: right - 오른쪽 정렬
+text-align: center - 중앙 정렬
+text-align: justify - 양쪽 정렬(자동 줄바꿈시 오른쪽 경계선 부분 정리)
 */
 
 
 p {
     font-size: 24px;
-    text-indent: -50px; /* -50px만큼 글자를 내어쓰기할때 사용한다 */
-    /* text-indent: 50px; */ /* text-indent: 50px 50px만큼 글자의 몇칸정도를 띄워쓰기해준다고 할때 사용한다 */
+    text-indent: -50px; 
+    /* -50px만큼 글자를 내어쓰기할때 사용한다 */
+    /* text-indent: -50은 글자를 50만큼 앞으로 땡기는것; */
+    
+    /* text-indent: 50px; */ 
+    /* text-indent: 50px 50px만큼 글자의 몇칸정도를 띄워쓰기해준다고 할때 사용한다 */
 }
+
 /* 
 문자 첫줄의 들여쓰기(text-indent)
 0: 들여쓰기 없음
 단위: px, em, rem등 단위로 지정
 %: 요소의 가로 너비에 대한 비율
 */
+
+
+/* 문자를 수평 정렬하는 속성은? */
+/* text-align */
+
+/* 문자를 들여쓰는 속성은? */
+/* text-indent */
+
+/* text-decoration 속성의 기본값은? */
+/* none */
