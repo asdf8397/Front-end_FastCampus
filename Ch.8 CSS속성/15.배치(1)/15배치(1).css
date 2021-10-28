@@ -1,7 +1,6 @@
-.container {
+.container { /*  --1--  */
     width: 300px;
     background-color: royalblue;
-    position: relative;
 }
 .container .item {
     border: 4px dashed red;
@@ -14,23 +13,99 @@
 .container .item:nth-child(2) {
     width: 140px;
     height: 70px;
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
+    position: relative;
+    top: 30px;
+    left: 60px;
 }
 .container .item:nth-child(3) {
     width: 70px;
     height: 120px;
 }
 
-/* position: 요소의 위치를 지정해 주는 기준 */
+.samsung { /* -- 2 -- */
+    width: 300px;
+    background-color: royalblue;
+}
+.samsung .item {
+    border: 4px dashed red;
+    background-color: orange;
+}
+.samsung .item:nth-child(1) {
+    width: 100px;
+    height: 100px;
+}
+.samsung .item:nth-child(2) {
+    width: 140px;
+    height: 70px;
+}
+.samsung .item:nth-child(3) {
+    width: 70px;
+    height: 120px;
+}
+
+.LG { /* --3-- */
+    width: 300px;
+    background-color: royalblue;
+}
+.LG .item {
+    border: 4px dashed red;
+    background-color: orange;
+}
+.LG .item:nth-child(1) {
+    width: 100px;
+    height: 100px;
+}
+.LG .item:nth-child(2) {
+    width: 140px;
+    height: 70px;
+}
+.LG .item:nth-child(3) {
+    width: 70px;
+    height: 120px;
+}
+
+/* position */
 /* 
-static: 기준없음 
+정리: 요소를 배치해주기 위해서는 어떠한 기준을 만들고나서 위치 값을
+지정해줘야한다
+*/
+/* -- (position의 기준을 잡을때)  
+static: 기준없음(배치를 할 수 없다)
 relative: 요소 자신을 기준
 absolute: 위치 상 부모 기준을 기준
 fixed: 뷰포트(브라우저)를 기준
 */
 /* 
-정리: 요소를 배치해주기 위해서는 어떠한 기준을 만들고나서 위치 값을
-지정해줘야한다
+position속성은 문서 상에서 요소를 배치하는 방법으로 
+top, right, bottom, left z-index 속성이 배칭되는 최종위치를 결정한다.
+ */
+
+/* top, bottom, left, right의 auto는 브라우저가 계산하고 단위는 px, em, rem등
+단위로 지정한다 */
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+/* relative */
+/* 요소 자신을 기준으로 배치한다 */
+/* 화면에서 relative를 지정한 것은 그 relative를 지정한것이 기준이된다. */
+
+/* 
+--1--의 CSS에서 .container .item:nth-child(2)에서 position: relative 
+top: 30px left: 200px를 줬을때 화면에서 2번 박스는 relative가 지정되어있으므로
+2번 박스 자신을 기준으로 top: 30만큼 left(왼쪽) 200만큼 오른쪽 아래로 이동한다
+
+참고 2번이 나온 위치에 보기엔 비워져있을것 같지만 비워져 있지 않다
 */
+
+/* absolute */
+/* 위치 상 부모 요소를 기준으로 배치 */ 
+/* absolute를 지정해서 사용할때 relative의 기준으로 absolute를 지정하게 된다. */
+/* 
+absolute는 화면에서 지정한 박스가 붕뜨게 되고 position absolute를 지정한것은
+relative를 지정한 박스를 기준으로 top left right, bottom을 설정하게되고
+만약 relative를 지정하지 않는다면 지금 보이는 화면의 html을 기준으로 top, bottom
+left, right가 지정된다.
+*/
+
+/* position: static */
+/* position을 지정하지 않는다는것 static */

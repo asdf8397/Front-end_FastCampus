@@ -1,0 +1,36 @@
+/* z-index - 요소의 쌓임 정도를 지정한다. */ /* position이 같고 z-index가 높을수록 위에 쌓인다.*/
+/* auto: 부모 요소와 동일한 쌓임 정도
+숫자: 숫자가 높을수록 위에 쌓임 */
+
+/* 요소의 display가 변경됨 */
+/* position속성의 값으로 absolute, fixed가 지정된 요소는
+display 속성이 block으로 변경됨 */
+
+span {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    font-size: 40px;
+    position: absolute;
+}
+
+/* span태그는 인라인요소(문자,글자)요소라서 box요소가 적용되지 않는다.
+하지만 position:absolute 또는 fixed요소가 적용되면 absolute, fiex요소
+안에 block요소가 적용되어있기때문에 인라인요소였던 span이 box요소로 바뀌게
+된다. 원래대로라면 display:block;으로 해줘야한다. */
+
+/* Q&A */
+
+/* position값의 기본값은? */
+/* static */
+
+/* 위치상 부모 요소를 기준으로 배치하는 position속성의 값은? */
+/* absolute */
+
+/* 뷰포트를 기준으로 배치하는 position 속성의 값은? */
+/* fixed */
+
+/* display속성이 block 값으로 바뀌지 않는 position 속성의 값은? */
+/* 1) absolute 2) relative 3)fixed */
+
+/* 2) relative */

@@ -1,0 +1,129 @@
+.wrap {
+    width: 400px;
+    height: 300px;
+    background-color: tomato;
+    position: relative;
+}
+.container {
+    width: 300px;
+    background-color: royalblue;
+    /* position: relative; */
+}
+.container .item {
+    border: 4px dashed red;
+    background-color: orange;
+}
+.container .item:nth-child(1) {
+    width: 100px;
+    height: 100px;
+}
+.container .item:nth-child(2) {
+    width: 140px;
+    height: 70px;
+    position: absolute;
+    bottom: 30px;
+    right: 60px;
+}
+.container .item:nth-child(3) {
+    width: 70px;
+    height: 120px;
+}
+
+/* .wrap{}에서 position: relative;를 설정해주고 .container .item{} background-
+color: orange를 해주면 div nth-child(2) box는 .wrap{}의 bottom:30px right:60px
+위치에 구성되게 된다 */
+
+body {
+    height: 3000px;
+}
+.watch {
+    width: 400px;
+    height: 300px;
+    background-color: tomato;
+}
+.map {
+    width: 300px;
+    background-color: royalblue;
+    position: relative;
+}
+.map .item {
+    border: 4px dashed red;
+    background-color: orange;
+}
+.map .item:nth-child(1) {
+    width: 100px;
+    height: 100px;
+}
+.map .item:nth-child(2) {
+    width: 140px;
+    height: 70px;
+    position: fixed;
+    bottom: 30px;
+    right: 60px;
+}
+.map .item:nth-child(3) {
+    width: 70px;
+    height: 120px;
+}
+
+/* fixed: 뷰포트(브라우저)를 기준으로 배치 */
+/* 기존에 position: relative같은 경우 position:relative를 지정한 곳을 기준으로
+position: absolute를 설정하고 bottom, top right, left를 지정했었다면
+fixed는 position: relative를 무시하고 뷰포트(화면)을 기준으로 bottom, top right, :left
+를 지정하고 고정해서 꾸밀수있다 */
+
+
+
+.container {
+    width: 300px;
+    background-color: royalblue;
+    position: relative;
+}
+.container .item {
+    width: 100px;
+    height: 100px;
+    border: 4px dashed red;
+    background-color: orange;
+}
+.container .item:nth-child(1) {
+    position: relative;
+    z-index: 1;
+}
+.container .item:nth-child(2) {
+    position: absolute; /* absolute는 붕뜬다.*/ /* 3번은 2번뒤로 숨겨진다.*/
+    top: 50px;
+    left: 50px;
+    /* position:absolute, top:50px, left:50px는 .container{position: relative;}
+    의 기준으로 .container box로 부터 top left값을 지정한것 */
+}
+.container .item:nth-child(3) {
+    z-index: 2;
+
+}
+/* 요소 쌓임 순서(Stack order) - 어떤 요소가 사용자와 더 가깝게 있는지(위에 쌓이는지 결정) */
+/* 
+1. 요소에 position속성의 값이 있는 경우 위에 쌓임(기본값 static 제외)
+2. 1번 조건이 같은 경우, z-index속성의 숫자 값이 높을수록 위에 쌓임
+3. 1번과 2번 조건까지 같은 경우, HTML의 다음 구조일수록 위에 쌓임 
+*/
+
+
+/* z-index */
+/* z-index:0;은 z-index가 없다는것 z-index:1은 z-index가 있는것 */
+
+/* z-index - 요소의 쌓임 정도를 지정한다. */ /* position이 같고 z-index가 높을수록 위에 쌓인다.*/
+/* auto: 부모 요소와 동일한 쌓임 정도
+숫자: 숫자가 높을수록 위에 쌓임 */
+
+/* 
+z-index는 요소쌓임에서 우선순위를 정해주게 된다 
+단.. .container .item:nth-child(1) { 와.container .item:nth-child(2) {의
+요소 쌓임에서 둘다 position이 주어졌기에 둘다 쌓이는건 동일했다 그렇지만 z-index
+주게되면 z-index값을 준 요소가 쌓임이 우선된다.
+
+.container .item:nth-child(3) {는 z-index:2;를 주고 요소쌓임을 적용했을때
+.container .item:nth-child(2) {이 .container .item:nth-child(3)밑으로 내려가지
+않는다. 이유는 .container .item:nth-child(1) { 와 .container .item:nth-child(2) {는
+position을 적용한상태에서 z-index를 적용한 상태이고 .container .item:nth-child(3) {는
+z-index만 적용했기때문에 적용되지않는다. position이 우선한다.
+*/
