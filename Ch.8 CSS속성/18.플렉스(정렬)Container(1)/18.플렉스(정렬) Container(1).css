@@ -1,0 +1,84 @@
+.container {
+    background-color: royalblue;
+    display: flex;
+}
+.container .item {
+    width: 100px;
+    height: 100px;
+    border: 3px dashed red;
+    background-color: orange;
+}
+
+
+
+/* 수평정렬 */
+/* .container{}를 수평정렬할땐 .container인 부모요소 안에 display:flex;하면
+.container와 .container .item{}이 화면에서 상단에 수평정렬된다 */
+
+/* display */
+/* 
+display:flex 인라인요소를 박스요소로 바꿔줄수있다.
+display:inline-flex 박스요소를 인라인 요소로 바꿔줄수있다.
+ */
+
+.sam {
+    background-color: royalblue;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.sam .item {
+    width: 100px;
+    height: 100px;
+    border: 3px dashed red;
+    background-color: orange;
+}
+
+.sung {
+    background-color: royalblue;
+    display: flex;
+    flex-direction: row;
+}
+.sung .item {
+    width: 100px;
+    height: 100px;
+    border: 3px dashed red;
+    background-color: orange;
+}
+/* 행,row */
+/* flex-direction */
+/* 
+row: 행에서 우측정렬 (시작점이 왼쪽이고 1,2,3 이렇게 오른쪽으로 정렬되어있고
+row-reverse: 행에서 좌측정렬 (시작점이 오른쪽이고 3,2,1 이렇게 왼쪽을 정렬되어있다.
+*/
+/* start, end */
+
+.a {
+    background-color: royalblue;
+    display: flex;
+    flex-direction: column;
+}
+.a .item {
+    width: 100px;
+    height: 100px;
+    border: 3px dashed red;
+    background-color: orange;
+}
+
+.b {
+    background-color: royalblue;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.b .item {
+    width: 100px;
+    height: 100px;
+    border: 3px dashed red;
+    background-color: orange;
+}
+
+/* 열,Column */
+/* flex-direction:column */
+/* 시작점이 top에 있고 아래로 정렬되고 */
+
+/* flex-direction: column-reverse */
+/* 시작점은 bottom에 있고 위로 정렬된다. */

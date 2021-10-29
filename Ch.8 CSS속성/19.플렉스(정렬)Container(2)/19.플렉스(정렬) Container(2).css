@@ -1,0 +1,85 @@
+.container {
+    width: 400px;
+    height: 200px;
+    background-color: royalblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .item {
+    width: 100px;
+    height: 100px;
+    border: 3px dashed red;
+    background-color: orange;
+}
+/* flex-wrap */
+/* Flex Items묶음(줄 바꿈)여부 */
+/* 
+nowrap: 묶음(줄 바꿈)없음 
+wrap: 여러 줄로 묶음
+*/
+.container{flex-wrap: wrap;}은
+
+.main {
+    width: 400px;
+    height: 200px;
+    background-color: royalblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main .item {
+    width: 100px;
+    height: 100px;
+    border: 3px dashed red;
+    background-color: orange;
+}
+
+/* justify-content: 주축의 정렬 방법 */
+/* 
+flex-start: Flex Items를 시작으로 정렬
+flex-end: Flex Items를 끝점으로 정렬
+center: Flex Items를 가운데 정렬
+*/
+
+
+.football {
+    width: 400px;
+    height: 200px;
+    background-color: royalblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+.football .item {
+    width: 100px;
+    height: 100px;
+    border: 3px dashed red;
+    background-color: orange;
+}
+/* align-content: 교차 축의 여러 줄 정렬 방법 */
+/* 
+stretch: Flex Items를 시작점으로 정렬 
+flex-start: Flex Items를 시작점으로 정렬
+flex-end: Flex Items를 끝점으로 정렬
+center: Flex Items를 가운데 정렬
+*/
+
+.dish {
+    width: 400px;
+    height: 200px;
+    background-color: royalblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+.dish .item {
+    width: 100px;
+    height: 100px;
+    border: 3px dashed red;
+    background-color: orange;
+}
+/* align-items: 교차 축의 한줄 정렬 방법 */
+/* 
+stretch: Flex Items를 교차 축으로 늘림
+flex-start: Flex Items를 각 줄의 시작점으로 정렬
+flex-end: flex Items를 각 줄의 끝점으로 정렬
+center: Flex Items를 각 줄의 가운데 정렬
+baseline: Flex Items를 각 줄의 문자 기준선에 정렬
+*/
