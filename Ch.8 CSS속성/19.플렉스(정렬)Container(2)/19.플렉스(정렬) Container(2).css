@@ -17,14 +17,18 @@
 nowrap: 묶음(줄 바꿈)없음 
 wrap: 여러 줄로 묶음
 */
-.container{flex-wrap: wrap;}은
+/*
+.container{flex-wrap: wrap; display: flex;}는 width:400px, height:200px
+background-color: royalblue;인 박스를 지정한 곳에 지정한 컨테이너가 들어갈수
+없을때 밑의 줄로 줄변환되서 달리게 된다
+*/
 
 .main {
     width: 400px;
     height: 200px;
     background-color: royalblue;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 .main .item {
     width: 100px;
@@ -39,6 +43,12 @@ flex-start: Flex Items를 시작으로 정렬
 flex-end: Flex Items를 끝점으로 정렬
 center: Flex Items를 가운데 정렬
 */
+/* .main {justify-content: flex-start flex-end center;}*/
+/* 
+justify-center의 flex-start는 box의 시작부분 왼쪽 끝의 시작부분에 box가 지정되는것
+justify-center의 flex-end는 box의 마지막 끝부분의 오른쪽 끝에 box가 지정되어 붙는것
+justify-center의 center는 box의 중앙부분에 box가 지정되어 붙는것을 말한다 
+*/
 
 
 .football {
@@ -47,6 +57,7 @@ center: Flex Items를 가운데 정렬
     background-color: royalblue;
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
 }
 .football .item {
     width: 100px;
@@ -61,6 +72,14 @@ flex-start: Flex Items를 시작점으로 정렬
 flex-end: Flex Items를 끝점으로 정렬
 center: Flex Items를 가운데 정렬
 */
+/* .football {display: flex; flex-wrap: wrap; align-content: flex-end;} */
+/* 
+align-content: flex-first는 box의 시작점이 수직으로서 top부분에서 시작하고
+flex-start는 top부분에 그대로 정렬되어있는것, flex-end는 top의 시작위치에서 bottom
+에 box가 붙어 있는것
+center는 top의 시작위치에서 bottom과 중간 위치에 box가 위치해 있는 것을 말함.
+*/
+
 
 .dish {
     width: 400px;
@@ -68,6 +87,7 @@ center: Flex Items를 가운데 정렬
     background-color: royalblue;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 .dish .item {
     width: 100px;
@@ -82,4 +102,10 @@ flex-start: Flex Items를 각 줄의 시작점으로 정렬
 flex-end: flex Items를 각 줄의 끝점으로 정렬
 center: Flex Items를 각 줄의 가운데 정렬
 baseline: Flex Items를 각 줄의 문자 기준선에 정렬
+*/
+/* .dish{display: flex; flex-wrap: wrap; align-items: flex-start; align-items: flex-end;} */
+/* 
+align-items: flex-start는 box안에 top부터 bottom까지 칸을 세워서 box를 정렬하는것
+align-items: flex-start는 box가 top에 위치하고 그 위치에서 구분하는것
+align-items: flex-end는 box가 bottom에 위치하고 그 위치에서 구분하는것
 */
