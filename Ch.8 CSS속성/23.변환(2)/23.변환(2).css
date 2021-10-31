@@ -1,0 +1,80 @@
+/* perspective: 하위요소를 관찰하는 원근 거리를 지정 */
+/* 단위: px등 단위로 지정 */
+/* perspective는 속성이다. */
+
+body {
+    padding: 100px;
+}
+.container {
+    width: 100px;
+    height: 100px;
+    background-color: royalblue;
+    perspective: 250px; /* perspective: 250의 원근법은 부모요소에 지정하는것이고*/
+}
+.container .item {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    font-size: 60px;
+    display: flex; /* container속에 들어있는 박을 가운데 정렬하기위해서 flex설정 */
+    justify-content: center; /* 수평정렬 justify-content */
+    align-items: center; /* 수직 가운데 정렬 align-item*/
+    transform: rotateY(180deg); /* transform: rotateY(180deg); y축으로 45도 회전 */
+    backface-visibility: hidden;
+    
+    /* 메모 */
+    /* 
+    transform: rotateY(180deg);는 변환효과 준상태이다 근데.... 
+    transform: rotateY(0deg);를 준것은 변환효과를 주지않는것이다
+    backface-visibility의 hidden은 변환효과를 줬을때 숨겨지는것인데
+    만약 transform: rotateY(0deg)를 준상태라면 hidden을 줘도 hidden이 먹히지
+    않는다 왜냐 0deg이기때문에 
+    */
+} 
+
+
+
+
+/* transform:perspective(500px) rotateY(45deg); 자식요소*/ 
+/* 
+현재의 perspective(500px) rotateY(45deg)는 Y축 기준으로 45도 회전하는 
+자기자신을 기준으로 45도 회전한 것
+*/
+
+/* transform: rotateY(45deg) 자식요소*/ /* perspective: 500px */
+/* 현재의 rotateY는 부모요소를 기준으로 Y축 45도 회전하는 것 */
+
+
+/* backface-visibility(3D) */
+/* 
+visible: 뒷면보임
+hidden: 뒷면숨김 
+*/
+
+/* transform: rotateY(180deg) (Y축)*/
+/* rotateY는 Y축 기준으로 180도 회전시키는것(자기자신을 기준으로) */
+
+/* transform: rotateY(180deg);
+backface-visibility: hidden; */
+/* 
+rotateY는 Y축 기준으로 180도 회전시키는것인데 backface-visibility:hidden은
+뒷면이 보이지않는것 
+*/
+
+
+
+/* Q&A */
+/* transform 속성의 2D 회전을 지정하는 변환함수는? */
+/* rotate() */
+
+/* 관찰 대상의 부모요소에 원근법을 지정하는 속성은? */
+/* perspective */
+
+/* skewX변환 함수에서 값으로 사용하는 단위는? */
+/* deg */
+
+/* perspective 함수에서 원근 거리가 적용되는 대상은? */
+/* 관찰 대상 자체 */
+
+/* 요소를 뒷면을 숨기는 속성과 값은? */
+/* backface-visibility: hidden; */

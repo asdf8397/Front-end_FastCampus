@@ -1,0 +1,92 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transition: 1s .5s
+    /* 단축속성부분에 2개의 초가 들어있으면 1번째 지속시간 2번째는 대기시간 */
+    /*
+    마우스를 클릭하게되면 1초만에 반응하고 색상의 변화는 .5초 뒤에 일어나게된다
+    그리고 마우스클릭을 때면 .5초 뒤에 다시 원상복구된다. 
+    */
+}
+/* div:hover {
+    width: 300px;
+    background-color: royalblue;
+} */
+
+div:active {
+    width: 300px;
+    background-color: royalblue;
+}
+
+
+/* hover */
+/* 반전효과를 주는것을 말함 */
+/* 
+div:hover {width: 300px; background-color: royalblue;}를 지정해주면
+background-color: orange가 지정된 css의 오렌지 박스에 마우스를 올리면 royalblue
+색상으로 변환되면서 width:300px으로 커지게 된다.
+*/
+
+
+/* active */
+/* 반전효과를 주는 것을 말함 */
+/* 
+div:active {width: 300px; background-color: royalblue;}를 지정해주면
+background-color: orange가 지정된 css의 오렌지 박스에 마우스를 클릭하면 royalblue
+색상으로 변환되면서 width:300px의 값으로 커지게 된다.
+*/
+
+
+/* transition */ /* 자연스럽게 만들어줄때 */
+/* 지속시간 타이밍을 지정해주는 것 */
+/* transition은 div의 지정한 orange박스에 active효과, hover효과를 
+주고 마우스를 올리거나 클릭해서 효과를 줬을때 몇초만에 전환효과가 일어나게 
+되는지 지정해줄수있다
+1s(1초) .5(0.5초) 등등 이렇게 지정할수있음 */
+
+
+/* transition-delay: 전환효과가 몇 초 뒤에 시작할지 대기시간을 지정 */
+/* 
+0s: 대기시간 없음 
+시간: 대기시간(s)을 지정
+*/
+
+
+
+
+
+
+/* transition 종류 */
+/* transition-property, transition-duration, transition-timing-function, transition-delay */
+
+/* transition-property */
+/* 
+all: 모든 속성에 적용 
+속성이름: 전환효과를 사용할 속성 이름 명시
+*/
+
+/* transition-duration: 전환 효과의 지속시간을 지정 */
+/* 
+0s: 전환효과 없음
+시간: 지속시간(s)을 지정 
+*/
+
+/* transition-timing-function: 전환효과의 타이밍(Easing) 함수를 지정 */
+/* ease: 느리게- 빠르게 - 느리게 */
+/* linear: 일정하게 */
+/* ease-in 느리게 - 빠르게 */
+/* ease-out: 빠르게 -느리게 */
+/* ease - in -out: 느리게 - 빠르게 - 느리게 */
+
+/* easing function사이트 */
+/* https://easings.net/ko */
+
+
+/* Q&A */
+
+/* transition-property속성의 기본값은? */
+/* all */
+
+/* transition 단축 속성의 필수 포함 속성은? */
+/* transition-duration */
