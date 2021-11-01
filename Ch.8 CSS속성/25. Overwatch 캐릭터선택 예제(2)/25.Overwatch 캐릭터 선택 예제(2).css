@@ -1,0 +1,108 @@
+body {
+    height: 100vh;
+    background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container {
+    padding: 50px 0;
+
+}
+.container .heroes {
+    display: flex; 
+    /* .container .heroes .hero {의 background-color 수직으로 정렬되어있는것을
+        수평정렬로 맞출때 display: flex 추가한다.*/
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 700px;
+    
+    /* max-width: 뒷배경으로 지정한 orange가 늘어나는것을 정렬 */
+    /* width와 max-width: 차이점은 창의 크기변화에 따라 능동적으로 움직임; */
+    /* width: 700px;은 창의 크기가 700에 맞춰지고 창의 변화에 따라서 크기 변화없음
+    max-width: 700px;은 창의 크기가 700px 최대에 맞춰져있고 창의 크기의 변화에 따라서
+    움직이게 된다 */
+    
+    margin: 0 auto; /* 위아래 값은 0 좌우 값은 auto(자동으로)넣어주세요*/
+    
+    /* marign은 외부여백을 나타낼때 사용하게 되지만 max: width 700px;와 같이 조건이 있을땐
+    margin: auto를 써줄 경우 center정렬된다 */
+    /* margin: auto;은 기본적으로 블록요소에 가로 사이즈가 있는 상태에서 margin의 값이
+    좌우가 auto라면 가운데 정렬된다. */
+    padding: 40px 20px; /* 내부여백 */
+}
+.container .heroes .hero {
+    width: 80px;
+    height: 84px;
+    margin: 4px; /* margin은 여백을 만들어줄때 */
+    border: 3px solid #fff;
+    border-radius: 10px; /* 둥글게 깍아준다 */
+    box-sizing: border-box;
+    background-color: #555;
+    overflow: hidden;
+    transform: skewX(-14deg); /* -14도 만큼 기울임 */
+    transition: 
+        transform .1s, 
+        background-color .6s; 
+    /* 전환효과 시간초를 지정할때 */ /* transform: transform은 scale(1.3)에 적용됨 */
+}
+.container .heroes .hero:hover {
+    background-color: #ff9c00; 
+    /* 칸에 마우스를 올렸을때 각각의 아이템이 마우스가 올라갈때 배경색이 변하는것*/
+    transform: skewX(-14deg) scale(1.3); 
+    /* skewX(-14deg)를 transform을 넣어주면 scale(1.5)의 크기가 커질때
+    기울임이 다시 돌아오지 않는다.*/
+    z-index: 1;
+}
+.container .heroes .hero .image {
+    width: 140%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90px;
+    transform: skewX(14deg) translateX(16px);
+}
+.container .heroes .hero:nth-child(1) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero1.png");}
+.container .heroes .hero:nth-child(2) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero2.png");}
+.container .heroes .hero:nth-child(3) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero3.png");}
+.container .heroes .hero:nth-child(4) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero4.png");}
+.container .heroes .hero:nth-child(5) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero5.png");}
+.container .heroes .hero:nth-child(6) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero6.png");}
+.container .heroes .hero:nth-child(7) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero7.png");}
+.container .heroes .hero:nth-child(8) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero8.png");}
+.container .heroes .hero:nth-child(9) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero9.png");}
+.container .heroes .hero:nth-child(10) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero10.png");}
+
+.container .heroes .hero:nth-child(11) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero11.png");}
+.container .heroes .hero:nth-child(12) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero12.png");}
+.container .heroes .hero:nth-child(13) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero13.png");}
+.container .heroes .hero:nth-child(14) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero14.png");}
+.container .heroes .hero:nth-child(15) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero15.png");}
+.container .heroes .hero:nth-child(16) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero16.png");}
+.container .heroes .hero:nth-child(17) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero17.png");}
+.container .heroes .hero:nth-child(18) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero18.png");}
+.container .heroes .hero:nth-child(19) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero19.png");}
+.container .heroes .hero:nth-child(20) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero20.png");}
+
+.container .heroes .hero:nth-child(21) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero21.png");}
+.container .heroes .hero:nth-child(22) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero22.png");}
+.container .heroes .hero:nth-child(23) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero23.png");}
+.container .heroes .hero:nth-child(24) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero24.png");}
+.container .heroes .hero:nth-child(25) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero25.png");}
+.container .heroes .hero:nth-child(26) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero26.png");}
+.container .heroes .hero:nth-child(27) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero27.png");}
+.container .heroes .hero:nth-child(28) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero28.png");}
+.container .heroes .hero:nth-child(29) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero29.png");}
+.container .heroes .hero:nth-child(30) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero30.png");}
+
+.container .heroes .hero:nth-child(31) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero31.png");}
+.container .heroes .hero:nth-child(32) .image {background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/hero32.png");}
+
+.container .logo {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.container .logo img {
+    width: 100%;
+}
