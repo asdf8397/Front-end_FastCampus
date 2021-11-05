@@ -158,5 +158,11 @@ const hisName = heropy.getName(); ← const hisName을 지정해준 변수에
 = heropy.getName()에 담겨진 HEROPY가 담겨지게 되고 hisName에 HEROPY가 담겨진다
 그리고 console.log(hisName);에 의해서 실행
 아니면 처음에 getName에 담겨진 Heropy를 바로 console.log(heropy.getName());
-으로 실행할수있다.
+에 담아서 실행할수있다.
+*/
+
+// 중요하다
+/*
+추가설명 const heropy지정한 변수 속에 function 메소드가 들어가있는데 이부분을
+구분해서 정리하는 것 (중요한 부분이다.)
 */
