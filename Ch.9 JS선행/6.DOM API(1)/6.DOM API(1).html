@@ -5,9 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM API(1)</title>
-    <script defer  src="./6.DOM API(1).js"></script>
+    <script defer src="./6.DOM API(1).js"></script>
+    <!-- <script src="./6.DOM API(1).js"></script> 예시 -->
 </head>
 <body>
-    <div class="box">box!!</div>
+    <div class="box">Box!</div>
 </body>
 </html>
+
+<!-- defer설명 -->
+<!--
+JS코드에서 작성해준 코드를 HTML에 적용시키기 위해서 DOM API HTML작성한
+코드를 top에서 bottom으로 읽어들어간다 
+여기서 <script src="./6.DOM API(1).js"></script>을 해줄 경우 HTML은
+<script src=""></script>밑의 <body></body>부분을 읽지않고 null이 된다
+이럴때 <script src=""></script>해줄때 defer를 추가해서
+<script defer src=""></script>를 해주면 JS코드가 HTML body부분을 읽게되고
+null이 아니라 적용한 JS코드가 console에 적용된다.
+ -->
