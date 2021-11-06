@@ -23,3 +23,4 @@ boxEl.addEventListener('click', function () {
 });
 
 
+const boxEl를 선언해주고 document.querySelector('.box');
