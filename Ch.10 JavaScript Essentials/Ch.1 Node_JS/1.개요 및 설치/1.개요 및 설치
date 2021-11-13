@@ -8,9 +8,25 @@ JS는 컴퓨터에서도 동작하고 크롬 브라우저에서 동작하지만
 웹브라우저에서는 HTML, CSS, JS를 가지고 할 수 있지만 개발에 도움을 주는 
 모듈을 가지고 작업을 할수있다
 
+
 Node.js 설치방법
 크롬 검색창에서 Node.js를 검색하면 https://nodejs.org로 연결된 페이지로
 들어가서 첫창에서 "다운로드 - windows(X64)"가 나오고 16.13.0 LTS를
 다운받으면 되는데 새로운 버전이 나올때 마다 업데이트를 해주기 위해서
 Node version manager를 다운받을 것을 권장한다.
 
+↓ 그래서 Windows(X64)의 16.13.0 LTS를 다운받지말고 Node version manager를 다운받을것
+
+Windows 운영체제를 이용하는 사용자 Node version Manager 다운받는법
+nvm-windows를 Google검색창에서 검색하면 
+"https://github.com/coreybutler/nvm-windows"링크가 나오게 된다.
+클릭할수있게 coreybutler.nvm-windows:A node.js version.... - Github이라고
+클릭할 수 있게 나온다.
+클릭후 github로 들어가면 Overview에 windows. Has an installer. Download Now!
+가있다 여기서 "Download Now"를 클릭해서 들어가면 
+"1.1.8 - Corepack NVM for windows v1.1.8 Notes"가 있고 스크롤해서 내리면 
+Assets부분에 "nvm-setup.zip"이 있고 nvm-setup.zip을 클릭해서 다운받아서
+압축을 풀어주고 다운로드를 진행하면된다.
+진행완료되면 VSCODE에서 terminal에서 "nvm --version"이라고 치고 Enter하면
+다양한 명령어들이 나오지만 여기서 Running version 이 나온다.
+그러면 설치가 된것이다.
