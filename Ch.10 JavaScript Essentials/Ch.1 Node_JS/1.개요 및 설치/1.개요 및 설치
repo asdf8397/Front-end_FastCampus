@@ -28,5 +28,21 @@ nvm-windows를 Google검색창에서 검색하면
 Assets부분에 "nvm-setup.zip"이 있고 nvm-setup.zip을 클릭해서 다운받아서
 압축을 풀어주고 다운로드를 진행하면된다.
 진행완료되면 VSCODE에서 terminal에서 "nvm --version"이라고 치고 Enter하면
-다양한 명령어들이 나오지만 여기서 Running version 이 나온다.
+다양한 명령어들이 나오지만 여기서 Running version 1.1.8이 나온다.
 그러면 설치가 된것이다.
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+이렇게 진행했는데 이렇게 나올경우 ↓
+npm : 'npm' 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수 있는 프로그램 이름으로 인식되지
+ 않습니다. 이름이 정확한지 확인하고 경로가 포함된 경우 경로가 올바른지 검증한 다음 다시 시도
+하십시오.
+위치 줄:1 문자:1
++ npm init -y
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (npm:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+구글 검색창에 "Terminal Select Default Shell 없음"을 검색후 [VSCode] 비주얼스튜디오코드 터미널 파워셀에서 CMD나 ... 이렇게 되어있는 
+페이지에 접속해서 문제 해결할것
+
+https://jhnyang.tistory.com/456 ← 여기에 들어가서 확인후 수정할 것 [Powershell문제로서 windows버전의 OS에서 많이 일어나는 현상이다.]
